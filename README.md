@@ -1,2 +1,2 @@
 # simple-login-screen
-### An animated and login screen made for the purpose of studies
+An animated login screen made for the purpose of studies
