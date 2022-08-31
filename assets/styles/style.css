@@ -33,7 +33,7 @@ main{
     display: flex;
     background: #121212;
     padding: 10rem;
-    height: 80vh;
+    height: 80rem;
     width: 45rem;
     border-radius: 4rem;
     flex-direction: column;
@@ -59,7 +59,7 @@ main{
     text-align: center;
     color: var(--white-color);
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: clamp(8px 1.4rem 16px);
     font-weight: lighter;
 }
 .login-span{
@@ -129,4 +129,17 @@ main{
 }
 .login-enter a:hover{
     color: var(--primary-color);
+}
+.img{
+    width: 100%;
+}
+
+@media screen and (max-width: 950px){
+    .img{
+        display: none;
+    }
+    #login-section{
+        padding: 20px;
+        background: var(--soft-black);
+    }
 }
