@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: #E91663;
+    --secundary-color: #9c27b0;
+    --purple-color: #673AB7;
+    --blue-color: #3F51B5;
+    --soft-black: #151515;
+    --white-color: #fff;
+    --light-gray-color: #e6e6e6;
+
+    --gap: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background: var(--soft-black);
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+#login-section{
+    display: flex;
+    background: #121212;
+    padding: 10rem;
+    height: 80vh;
+    width: 45rem;
+    border-radius: 4rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-text{
+    margin-bottom: 2.8rem;
+}
+.login-text h1{
+    color: var(--white-color);
+    font-style: italic;
+    font-size: 2rem;
+}
+.login-text h2{
+    font-style: italic;
+    color: var(--primary-color);
+}
+.login-text-span{
+    color: var(--primary-color);
+}
+.login h3{
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.login-span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+}
+.login-inputs input{
+    font-size: 1.6rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--white-color);
+}
+.login-options{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    user-select: none;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.login-options a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+.login-options a:hover{
+    color: var(--primary-color);
+}
+
+.login-enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-enter button{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: none;
+    padding: 0.5rem 8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.login-enter button:hover{
+    color: var(--primary-color);
+    background: var(--white-color);
+}
+.login-enter a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-style: italic;
+    transition: all 200ms ease-in-out;
+}
+.login-enter a:hover{
+    color: var(--primary-color);
+}
